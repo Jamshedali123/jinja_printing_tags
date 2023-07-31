@@ -6,6 +6,6 @@ def data_render(request):
     return render(request,'data_render.html',context=d)
 
 def conditions(request):
-    d={'a':1000,'b':15000,'c':7000}
+    d={'a':1000,'b':15000,'c':7000,'hobbies':['travelling','reading novels','movies']}
     return render(request,'conditions.html',context=d)
     

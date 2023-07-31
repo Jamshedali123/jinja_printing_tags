@@ -33,7 +33,7 @@
         {% endif %}
     </center>-->
     
-    <center>
+   <!--- <center>
         <h1>NESTED LOOP IF-ELSE CONDITION</h1>
         {% if a > b %}
             {% if a > c %}
@@ -48,6 +48,18 @@
                 <h1>c is greatest value of c is {{c}} </h1>
             {% endif %}
         {% endif %}
+    </center> -->
+    <center>
+
+    <h1>for loop by jinja tags</h1>
+    <h1>my hobbies are</h1>
+    {% for i in hobbies %}
+        <h1>{{i}}</h1>
+    {% endfor %}
     </center>
+    <center>
+<h1><a href="{% url 'data_render' %}">click here to navigate form condition to data_render html page</a></h1>
+</center>
+
 </body>
 </html>
